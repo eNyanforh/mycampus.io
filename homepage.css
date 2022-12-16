@@ -1,0 +1,223 @@
+/* @media screen and (min-width:600px) { */
+    
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+
+/* styling the navigation bar */ 
+header #nav-bar1{
+    width:100%;
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white
+}
+
+/* Removing default underling from all links in the header */
+header #nav-bar1 a{
+    text-decoration: none;    
+}
+
+/* styling a link in a navbar when it is active */
+#nav-bar1 a:active{
+    font-weight: bold;
+    color:rgb(97,89,226)
+}
+
+/* changing  a link color to green and making the font bold a navbar when a user hovers over it */
+a:hover{
+    color:rgb(88, 194, 88);
+    font-weight: bold; 
+}
+
+/* styling the logo container to take 42% percent of the device width */
+.logo-container{
+    width:42%; 
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+.logo-container img{
+    width:128px;
+    height: 25px;
+}
+
+.nav-links{
+    width:25%;
+    height:40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 11pt;
+    font-weight:lighter;
+    border-right:1px none;
+    
+}
+
+.nav-links div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:10%
+}
+
+.nav-links div i{
+    font-size: 14pt;
+}
+
+.enter-btn{
+    width:15%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight:bold;
+    background-color: red;
+    
+}
+
+.enter-btn a{
+    border-radius:20px 20px;
+    
+}
+
+.enter-btn div{
+    width:40%;
+    font-size: 1rem;
+}
+
+.join.btn a:hover{
+    background-color: gray;
+}
+
+header .join-btn{
+    border:1px solid none;
+    color:gray;
+}
+
+header .signin-btn{
+    color:rgb(92, 127, 190);
+    background-color:white;
+    border:2px solid rgb(92, 127, 190)
+}
+
+article,footer{
+    width:100%;
+    height:80vh;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:20px;
+    overflow: hidden;
+}
+
+article div{
+    width:41%;
+    height: 100%;
+
+}
+
+.form-container h1, .site-description h1{
+    font-size: 39pt;
+    font-weight: lighter;
+    color:rgb(92, 127, 190);
+}
+
+.form-container h1 span{
+    color:rgb(62, 238, 94);
+    font-weight: bolder;
+
+}
+
+.form-container form{
+    margin-top:20px;
+    width:80%;
+    height:150px;
+    background-color:none;
+}
+
+form div{
+    width:100%;
+    height: 50%;
+}
+
+form input{
+    width:100%;
+    height: 50px;
+    padding:10px;
+    font-size: 12pt;
+    border-radius: 20px;
+    border:1px solid rgb(165, 168, 170);
+    text-align: center;
+}
+
+form input:focus{
+    border:1px solid rgb(164, 207, 236);
+}
+
+.submit-btn{
+    width:100%;
+    height: 50px;
+    padding:10px;
+    font-size: 15pt;
+    background: rgb(39,35,128);
+    background: linear-gradient(90deg, rgba(39,35,128,1) 34%, rgba(69,252,102,1) 100%);
+    border-radius: 20px;
+    margin-top:10px;
+    margin-bottom:30px;
+    border:0px solid rgb(88, 194, 88);
+    color:white
+
+}
+
+article .join-btn{
+    width:100%;
+    height: 50px;
+    padding:10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color:gray;
+    border-radius: 20px;
+    margin-top:0px;
+    border:1px solid gray;
+    color:white;
+    text-align: center;
+}
+
+article .submit-btn{
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    font-weight:bolder
+
+}
+
+.site-intro-pic img{
+    width:600px;
+}
+
+footer{
+    padding:10px;
+    height:10vh;
+    color:gray;
+}
+
+footer h4{
+    font-weight: lighter;
+    padding:10px;
+}
+}
