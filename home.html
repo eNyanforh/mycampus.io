@@ -6,280 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to MyCampus</title>
     <script src="https://kit.fontawesome.com/02b050165f.js" crossorigin="anonymous"></script>
-
-    <style>
-        body{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 
-            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
-            'Helvetica Neue', sans-serif;
-        }
-
-        *{
-            box-sizing: border-box;
-            margin:0;
-            padding:0;
-            
-        }
-
-        #nav-bar1{
-            width:100%;
-            height: 80px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            background-color: none;
-        
-        }
-
-        #nav-bar1 a{
-            text-decoration: none;
-            color:gray;
-            
-        }
-
-        #nav-bar1 a:active{
-            font-weight: bold;
-            color:rgb(97,89,226)
-        }
-
-        a:hover{
-            color:rgb(88, 194, 88);
-            font-weight: bold;
-            
-        }
-        
-
-        .logo1{
-            width:42%;
-
-        }
-
-        .logo1 img{
-            width:128px;
-            height: 25px;
-        }
-
-        .nav-links{
-            width:25%;
-            height:40%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            align-items: center;
-            font-size: 11pt;
-            font-weight:lighter;
-            border-right:1px solid grey;
-            
-        }
-
-        .nav-links div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width:10%
-        }
-
-        .nav-links div i{
-            font-size: 14pt;
-        }
-
-        .enter-btn{
-            width:15%;
-            display:flex;
-            justify-content: space-around;
-            font-weight:bold;
-            
-        }
-
-        .enter-btn a{
-            border-radius:20px 20px;
-            padding:5px 10px
-            
-        }
-
-        .join.btn a:hover{
-            background-color: gray;
-        }
-
-        article,section,footer{
-            width:100%;
-            height:550px;
-            background-color:whitesmoke;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top:20px;
-            overflow: hidden;
-        }
-
-        article div, section div{
-            width:41%;
-            height: 100%;
-
-        }
-
-
-
-        .form-container h1, .site-description h1, .section5 h1{
-            font-size: 39pt;
-            font-weight: lighter;
-            color:rgb(92, 127, 190);
-        }
-
-        .form-container form{
-            margin-top:20px;
-            width:80%;
-            height:150px;
-            background-color:none;
-
-        }
-
-        form div{
-            width:100%;
-            height: 50%;
-        }
-
-        form input{
-            width:100%;
-            height: 50px;
-            padding:10px;
-            font-size: 12pt;
-        }
-
-        .submit-btn{
-            width:100%;
-            height: 50px;
-            padding:10px;
-            font-size: 15pt;
-            background: rgb(39,35,128);
-            background: linear-gradient(90deg, rgba(39,35,128,1) 34%, rgba(69,252,102,1) 100%);
-            border-radius: 20px;
-            margin-top:10px;
-            margin-bottom:30px;
-            border:0px solid rgb(88, 194, 88);
-            color:white
-        
-        }
-
-        article .join-btn{
-            width:100%;
-            height: 50px;
-            padding:10px;
-            font-size: 15pt;
-            background-color:white;
-            border-radius: 20px;
-            margin-top:0px;
-            border:1px solid gray;
-            color:gray;
-            text-align: center;
-        }
-
-        .site-intro-pic{
-            background-color:none;
-            overflow: none;
-            padding:0
-        }
-
-        .site-intro-pic img{
-            width:500px;
-        }
-
-        section{
-            background-color:white;
-            height:fit-content;
-            margin-bottom:50px
-            
-        }
-
-        section .join-btn{
-            width:100%;
-            height: 50px;
-            padding:0px;
-            font-size: 15pt;
-            color:rgb(62, 238, 94);
-            border-radius: 20px;
-            margin-top:10px;
-            border:1px solid none;
-            font-weight: bolder;
-        }
-
-        footer div{
-            width:50%;
-        }
-
-        .sec5-b{
-            display:flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        .sec5-b div{
-            width:30%;
-            height:80%;
-            background-color:rgb(198, 199, 248);
-            
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="homepage.css"/>
 </head>
+
 <body>
     <header>
 <!--- Navigation Links at the top of the page -->
         <div id="nav-bar1">
-            <div class="logo1">
+            <div class="logo-container">
                 <a href="#">
                     <img src="./images/mcp2.png"/>
-                </a>
-                
+                </a> 
             </div>
 
             <div class="nav-links">
-                <div>
-                    <div>
-                        <a href="#"><i class="fa-solid fa-lightbulb"></i></div>
-                    <div>Inspire</div>
-                        </a>
-                </div>
-
-                <div>
-                    <div>
-                        <a href="#">
-                            <i class="fa-solid fa-chalkboard-user"></i>
-                    </div>
-                    <div>Learn</div>
-                        </a>
-                </div>
-
-                <div>
-                    <a href="#">
-                    <div><i class="fa-solid fa-users"></i></div>
-                    <div>Connect</div>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="#">
-                    <div ><i class="fa-solid fa-briefcase"></i></div>
-                    <div>Work</div>
-                    </a>
-                </div>
                  
             </div>
 
             <div class="enter-btn">
                 <div>
-                    <a href="#" class="join-btn" style="color:rgb(62, 238, 94);border:1px solid none;">Join now</a>
+                    <a href="#" class="join-btn">Join now</a>
                 </div>
-                <div><a href="#" style="background: rgb(39,35,128);color:white;">Sign in</a></div>
+                <div>
+                    <a href="#" class="signin-btn">Sign in</a></div>
             </div>
-
         </div>
-        
     </header>
+
     <article>
         <div class="form-container">
-            <h1>Let's build a professional community</h1>
+            <h1><b>Not</b> just a<span> School Management System</span></h1>
 
             <form>
                 <div>
@@ -291,125 +47,27 @@
                 <p>Forget Password?</p>
 
                 <div>
-                    <input type="submit" name="submit" class="submit-btn"/>
+                    <div class="submit-btn">Sign in</div>
                 </div>
 
-                <p style="text-align: center;color:gray;margin-bottom: 20px;">or</p>
+                <hr/><br/>
                 <div>
-                    <div class="join-btn">Join now With Google</div>
+                    <div class="join-btn">Create Account</div>
                 </div>
 
             </form>
         </div>
         <div class="site-intro-pic">
-            <img src="./images/newpic1.png" style="width:600px;"/>
+            <img src="./images/newpic1.png"/>
         </div>
     </article>
 
-
-    <section class="section1">
-        <div class="site-intro-pic">
-            <img src="./images/learinging enviroment.png"/>
-        </div>
-
-        <div class="site-description">
-            <h1 style="line-height:55px;">Suitable Learning Environment for your School</h1>
-            <p style="font-size:20pt;margin-top:30px;color:gray">
-                MyCampus provides easy-to-use tools to help schools connect with students anywhere at anytime, 
-                which enhances a unique organization of students information.
-                </p>
-
-                <div>
-                    <div class="join-btn">Register your school</div>
-                </div>
-        </div>
-    </section>
-
-    <section class="section2">
-        <div class="site-description">
-            <h1 style="line-height:55px;">A supportive community that has your back</h1>
-            <p style="font-size:20pt;margin-top:30px;color:gray">
-                MyCampus is a space to get inspired, ask question, chat. pitch ideas,
-                gain recognition, and receive support from with shared interest & values. Make friend and
-                grow together
-                </p>
-
-                <div>
-                    <div class="join-btn">Get Started</div>
-                </div>
-        </div>
-
-        <div class="site-intro-pic">
-            <img src="./images/supportive-community.png"/>
-        </div>
-    </section>
-
-    <section class="section3">
-        <div class="site-intro-pic">
-            <img src="./images/opportunity.png"/>
-        </div>
-
-        <div class="site-description">
-            <h1 style="line-height:55px;">Find the Opportunity of your lifetime</h1>
-            <p style="font-size:20pt;margin-top:30px;color:gray">
-                Discover personalized Opportunities at every step of you jorney, including
-                jobs and internship from esteem employer, voluteering opportunities and scholarships
-                </p>
-
-                <div>
-                    <div class="join-btn">Get Started</div>
-                </div>
-        </div>
-    </section>
-
-    <section class="section4">
-        <div class="site-description">
-            <h1 style="line-height:55px;">Run your school smarter with our top features.</h1>
-            <p style="font-size:20pt;margin-top:30px;color:gray">
-                We believe that running your school smarter is the key towards your students success and also strong collaboration between parents, teachers and students is the only way out.
-                </p>
-
-                <div>
-                    <div class="join-btn">Get Started</div>
-                </div>
-        </div>
-
-        <div class="site-intro-pic">
-            <img src="./images/school smart.png"/>
-        </div>
-    </section>
-
-    <div class="section5" style="display:flex;flex-direction:column;width:100%;height:700px;
-    background-color: rgb(199, 236, 206);align-items: center;justify-content:center">
-        <div class="description" style="width:90%;background-color:none;height: 40%">
-            <h1 style="line-height:55px;margin-top:20px;">Why Join Us</h1>
-            <p style="font-size:20pt;margin-top:20px;color:gray">
-                To enhance school management through effective coordination between administrators, 
-                teachers, students and parents. Moreover, Students and professionals use MyCampus to connect on shared
-                interests, support each other, showcase themselves and discover opportunities from scholarships to jobs. 
-                </p>
-        </div>
-
-        <div class="sec5-b" style="width:90%;height:45%;background-color:none;">
-            <div>
-                <h4>School</h4>
-            </div>
-            <div>
-                <h4>Student</h4>
-            </div>
-            <div>
-                <h4>Business</h4>
-            </div>
-        </div>
- 
-    </div>
-
-    <footer style="padding:0">
-        <div class="side1" style="width:30%;height:100%;background-color:rgb(8, 8, 100)">
-        </div>
-
-        <div class="side2" style="width:70%;background-color: rgb(165, 246, 85); height: 100%;">
-        </div>
+    <footer>
+        <h4>MyCampus.io &copy; 2023 </h4>
+        <h4>Piracy Policy </h4>
+        <h4>Terms of Use </h4>
+        <h4>About Us </h4>
+        <h4>Contact Us </h4>
     </footer>
 </body>
 </html> 
