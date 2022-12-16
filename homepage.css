@@ -1,4 +1,4 @@
-/* @media screen and (min-width:600px) { */
+ @media screen and (min-width:600px) { 
     
 
 body{
@@ -85,7 +85,7 @@ a:hover{
     align-items: center;
     justify-content: space-around;
     font-weight:bold;
-    background-color: red;
+    background-color: none;
     
 }
 
@@ -111,7 +111,7 @@ header .join-btn{
 header .signin-btn{
     color:rgb(92, 127, 190);
     background-color:white;
-    border:2px solid rgb(92, 127, 190)
+    border:2px solid none;
 }
 
 article,footer{
